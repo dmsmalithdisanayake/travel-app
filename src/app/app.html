@@ -7,9 +7,9 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <button menuClose ion-item (click)="goTrending()">Trending</button>
+      <button menuClose ion-item (click)="goHome()">Near By</button>
+      <button menuClose ion-item (click)="logout()">Logout</button>
     </ion-list>
   </ion-content>
 

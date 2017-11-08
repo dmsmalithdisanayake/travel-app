@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Sl Traveller</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+    <span *ngFor="let location of locations">
+      <a ion-item (click)="openLocation($event,location)">
+        <ion-avatar item-left>
+          <img src="{{location.loc_img_url}}">
+        </ion-avatar>
+        <ion-label>{{location.loc_name}}</ion-label> 
+        
+    </a>
+    </span>
+ </ion-list>
+
+</ion-content>

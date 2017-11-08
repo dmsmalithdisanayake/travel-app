@@ -1,0 +1,26 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>{{location.loc_name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row responsive-sm wrap>
+<ion-col width-50>
+<img src={{location.loc_img_url}} />
+</ion-col>
+</ion-row>
+<ion-label text-center color="primary">{{location.loc_name}}</ion-label> 
+<ion-label text-center color="primary">{{location.loc_desc}}</ion-label> 
+<ion-label text-center color="primary"><ion-icon large name="navigate" color="primary" (click)="locationClick($event,location)"></ion-icon></ion-label> 
+<ion-chip>
+  <ion-icon name="heart" color="primary"></ion-icon>
+  <ion-label>Default</ion-label>
+</ion-chip>
+     <ion-note item-start>
+       {{location.loc_long_desc}}
+      </ion-note>
+</ion-content> 

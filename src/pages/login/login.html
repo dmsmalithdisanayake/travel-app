@@ -1,0 +1,34 @@
+<ion-content padding class="login_back">
+ <!-- <ion-label text-center stacked style="font-weight:bold;margin-top:20%;font-size:20px" color="transblue">SL TRAVELLER</ion-label> -->
+  <!-- <ion-img width="150" height="150" src="assets/img/image.jpg" class="img_tag"></ion-img> -->
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)" class="loginForm">
+    <ion-item class="login_item">
+      <!-- <ion-label stacked color="light">Email</ion-label> -->
+      <ion-input placeholder="Email" type="email" style="color:#2196F3;" pattern="[^ @]*@[^ @]*.[^@]*" formControlName="email" name="email"></ion-input>
+    <ion-icon color="transblue" item-start small name="mail"></ion-icon>
+    </ion-item>
+    <ion-item class="login_item">
+      <!-- <ion-label stacked color="light">Password</ion-label> -->
+      <ion-input placeholder="Password" type="password" style="color:#2196F3;" formControlName="password" name="password"></ion-input>
+    <ion-icon color="transblue" item-start small name="text"></ion-icon>
+    </ion-item>
+    <button  class="login_item" ion-button color="btn_color" type="submit" [disabled]="!loginForm.valid" block icon-left>
+        <ion-icon name="log-in"></ion-icon>
+        &nbsp;Login
+        </button>
+        <ion-label text-center underline color="primary" (click)="createuserclick()">Sign Up</ion-label>
+
+        		<!-- <ion-item (click)="login('facebook')">
+			<ion-icon name="logo-facebook" item-left></ion-icon>
+			Facebook
+		</ion-item>
+		<ion-item (click)="login('google')">
+			<ion-icon name="logo-google" item-left></ion-icon>
+			Google
+	</ion-item> -->
+  
+  </form>
+
+
+  
+</ion-content>

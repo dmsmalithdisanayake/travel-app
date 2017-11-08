@@ -1,0 +1,30 @@
+ .loginForm {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding-left:10px;
+    padding-right: 10px;     
+  }
+  .login_back{
+    //   background-image: url('../assets/img/image.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+}
+
+.login_item{
+    // color: #2196F3;
+    border: 2px solid #2196F3;
+    margin:10px auto;
+    border-radius: 30px !important;
+}
+.img_tag{
+     background-color: transparent;
+     max-height: 100%;
+     max-width: 100%;
+     display: block;
+     margin-top: 20%;
+     margin-left: 25%;
+    //  margin: auto;
+}
+
